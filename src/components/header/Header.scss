@@ -1,0 +1,23 @@
+
+header *{
+    color: #FFFF;
+}
+header{
+    background-color:#121213 ;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    h2{
+        font-family: Roboto;
+        font-weight: 300;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            gap: 40px;
+        }
+    }
+}
