@@ -1,0 +1,98 @@
+.contact{
+    padding: 50px 0;
+    background-color: adjust-color( #000000);
+        h2{
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 100px;
+        }
+        .contact-me{
+            display: flex;
+            justify-content: space-between;
+        }
+    .contact__card{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #FFFFFF;
+        max-width: 260px;
+        padding: 30px;
+        border-radius: 6px;
+        p{
+            font-size: 32px;
+            color: #FFFFFF;
+        }
+        svg{
+            font-size: 32px;
+            color: #C930C8 !important;
+        }
+    }
+    .contact__card:nth-child(2){
+        svg{
+            color: #32A5E0 !important ;
+        }
+    }
+    .contact__card:nth-child(3){
+        svg{
+            color: #0862F7 !important ;
+        }
+    }
+    .contact__card:nth-child(4){
+        svg{
+            color: #007AB5 !important ;
+        }
+    }
+
+    form{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            display: flex;
+            flex-direction: column;
+            label{
+                color: #FFFFFF;
+                margin-bottom: 10px;
+            }
+            input{
+                padding: 15px;
+                width: 500px;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #FFFFFF;
+                color: #FFFFFF;
+            }
+            input::placeholder{
+                color: #FFFFFF;
+                opacity: .6;
+            }
+        }
+        .df{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+        textarea{
+            padding: 15px;
+            width: 1050px !important;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            resize: none;
+        }
+        label{
+            margin-top: 50px;
+        }
+        textarea::placeholder{
+            color:#FFFFFF;
+            opacity: .6;
+        }
+    }
+}
