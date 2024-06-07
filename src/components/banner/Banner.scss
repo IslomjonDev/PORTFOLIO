@@ -6,6 +6,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+.banner-left  {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 300;
+}
 .banner-left{
 
     h1 , h2 , p {
@@ -42,6 +49,7 @@
         gap: 10px;
         font-family: Roboto;
         border-radius: 4px;
+        font-size: 20px !important;
         svg{
             font-size: 22px;
         }
@@ -53,3 +61,10 @@
     }
 }
 }
+
+.typewriter-text {
+    color: #3498db; /* Yozuv rangi: ko'k */
+    font-size: 24px; /* Shrift hajmi: 24px */
+    font-family: 'Courier New', Courier, monospace; /* Shrift oilasi */
+  }
+  

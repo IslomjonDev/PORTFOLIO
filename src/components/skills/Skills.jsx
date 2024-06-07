@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaGithubSquare ,FaReact  , FaHtml5 , FaCss3Alt , FaBootstrap} from "react-icons/fa";
+import { FaGithubSquare , FaSass ,FaReact  , FaHtml5 , FaCss3Alt , FaBootstrap} from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill , RiNextjsFill } from "react-icons/ri";
 
@@ -64,6 +64,10 @@ const Skills = () => {
         <SwiperSlide>
           <RiNextjsFill />
             <p>NextJs</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <FaSass />
+            <p>Sass</p>
         </SwiperSlide>
       </Swiper>
       </div>

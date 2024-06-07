@@ -10,6 +10,7 @@
         .contact-me{
             display: flex;
             justify-content: space-between;
+            margin-bottom: 50px;
         }
     .contact__card{
         display: flex;
@@ -29,17 +30,17 @@
             color: #C930C8 !important;
         }
     }
-    .contact__card:nth-child(2){
+    .contact-me a:nth-child(2){
         svg{
             color: #32A5E0 !important ;
         }
     }
-    .contact__card:nth-child(3){
+    .contact-me a:nth-child(3){
         svg{
             color: #0862F7 !important ;
         }
     }
-    .contact__card:nth-child(4){
+    .contact-me a:nth-child(4){
         svg{
             color: #007AB5 !important ;
         }
@@ -93,6 +94,27 @@
         textarea::placeholder{
             color:#FFFFFF;
             opacity: .6;
+        }
+        button{
+            margin-top: 50px;
+            width: 1050px;
+            background-color: #000000;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 4px;
+            svg{
+                font-size: 24px;
+            }
+        }
+        button:hover{
+            background-color: #FFFFFF;
+            color: #000000;
+            transition: .3s;
         }
     }
 }

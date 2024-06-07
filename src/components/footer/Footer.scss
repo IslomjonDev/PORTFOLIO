@@ -1,0 +1,43 @@
+footer{
+    background-color: black;
+    padding: 100px 0;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    h2{
+        margin-bottom: 30px;
+    }
+    span{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin: 10px 0;
+        a{
+            font-size: 20px;
+        }
+    }
+    .df{
+        display: flex;
+        gap: 250px;
+    }
+    .div{
+        display: flex;
+        svg{
+            font-size: 30px;
+        }
+    }
+    button{
+        background-color: black;
+        padding: 15px 40px ;
+        border: 1px solid #FFFFFF;
+        border-radius: 4px;
+    }
+}
+footer * {
+    color: #FFFFFF;
+}
+.p{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 10px 0;
+}
