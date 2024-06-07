@@ -12,10 +12,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 50px;
+  gap: 100px;
 }
 .contact .contact__card {
   display: -webkit-box;
@@ -117,7 +115,7 @@
 }
 .contact form textarea {
   padding: 15px;
-  width: 1050px !important;
+  width: 1050px;
   background-color: transparent;
   outline: none;
   border: none;
@@ -175,4 +173,58 @@
   color: #000000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 1060px) {
+  form button {
+    width: 500px !important;
+  }
+  form .df {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  form textarea {
+    width: 500px !important;
+  }
+  .contact-me {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact-me {
+    grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 30px !important;
+  }
+}
+@media (max-width: 550px) {
+  form button {
+    width: 300px !important;
+  }
+  form .df {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+  form .df input {
+    width: 300px !important;
+  }
+  form textarea {
+    width: 300px !important;
+  }
 }

@@ -1,5 +1,5 @@
-import React from 'react'
-import './Skills.scss'
+import React from 'react';
+import './Skills.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -17,7 +17,6 @@ const Skills = () => {
          <div className="container">
             <h1>Skills</h1>
          <Swiper
-        slidesPerView={5}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -25,6 +24,20 @@ const Skills = () => {
         autoplay={{
           delay: 1000, 
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          1200: {
+            slidesPerView: 5,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          0: {
+            slidesPerView: 2,
+          }
         }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"

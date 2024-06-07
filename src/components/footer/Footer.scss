@@ -41,3 +41,10 @@ footer * {
     background-color: black;
     padding: 10px 0;
 }
+
+@media (max-width:750px) {
+    .df{
+        flex-direction: column;
+        gap: 50px !important;
+    }
+}

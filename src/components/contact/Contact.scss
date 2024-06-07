@@ -9,8 +9,9 @@
         }
         .contact-me{
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             margin-bottom: 50px;
+            gap: 100px;
         }
     .contact__card{
         display: flex;
@@ -80,7 +81,7 @@
         }
         textarea{
             padding: 15px;
-            width: 1050px !important;
+            width: 1050px ;
             background-color: transparent;
             outline: none;
             border: none;
@@ -115,6 +116,54 @@
             background-color: #FFFFFF;
             color: #000000;
             transition: .3s;
+        }
+    }
+}
+
+
+@media (max-width:1060px) {
+    form{
+        button{
+            width: 500px !important;
+        }
+        .df{
+            flex-direction: column;
+            gap: 50px;
+        }
+        textarea{
+            width: 500px !important;
+        }
+    }
+    .contact-me{
+        display: grid !important;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 0;
+        row-gap: 50px;
+        justify-content: center;
+    
+    }
+}
+@media (max-width:600px) {
+    .contact-me{
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 30px !important;
+    }
+}
+@media (max-width:550px) {
+    form{
+        button{
+            width: 300px !important;
+        }
+        .df{
+            flex-direction: column;
+            gap: 50px;
+            input{
+                width: 300px !important;
+            }
+        }
+        textarea{
+            width: 300px !important;
         }
     }
 }

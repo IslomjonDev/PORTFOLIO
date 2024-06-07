@@ -50,7 +50,7 @@
   gap: 10px;
   font-family: Roboto;
   border-radius: 4px;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 .banner .banner-left button svg {
   font-size: 22px;
@@ -66,4 +66,26 @@
   color: #3498db; /* Yozuv rangi: ko'k */
   font-size: 24px; /* Shrift hajmi: 24px */
   font-family: "Courier New", Courier, monospace; /* Shrift oilasi */
+}
+
+@media (max-width: 550px) {
+  .banner-left h1 {
+    font-size: 36px !important;
+    line-height: 50px !important;
+    margin-top: 10px;
+  }
+  .banner-left h2 {
+    font-size: 16px !important;
+  }
+  .banner-left p {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+  .banner-left button {
+    padding: 15px 30px !important;
+    font-size: 16px !important;
+  }
+  .banner-left button svg {
+    font-size: 20px !important;
+  }
 }
