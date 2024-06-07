@@ -30,3 +30,64 @@ header .navbar ul {
   display: flex;
   gap: 40px;
 }
+header .burger {
+  display: none;
+}
+header .burger button {
+  background-color: #121213;
+  border: none;
+}
+header .burger button svg {
+  font-size: 28px;
+}
+
+@media (max-width: 550px) {
+  .burger {
+    display: block !important;
+  }
+  .nav__list {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    width: 300px;
+    height: 100vh;
+    border-radius: 0 12px 12px 0;
+    background-color: black;
+    position: absolute;
+    scale: 1;
+    padding: 40px 30px;
+    top: 66px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+  }
+  .nav__list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__list.show {
+    width: 250px;
+    height: 100vh;
+    border-radius: 0 12px 12px 0;
+    background-color: black;
+    position: absolute;
+    scale: 1;
+    padding: 40px 30px;
+    top: 66px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+  }
+  .nav__list {
+    scale: 0;
+    position: absolute;
+  }
+}
