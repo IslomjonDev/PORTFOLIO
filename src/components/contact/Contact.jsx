@@ -51,7 +51,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact">
+      <div id='contact' className="contact">
          <div className="container">           
             <form onSubmit={handleSubmit} action="">
                 <h2>Contact</h2>

@@ -13,7 +13,7 @@ import { RiTailwindCssFill , RiNextjsFill } from "react-icons/ri";
 const Skills = () => {
   return (
     <>
-      <div className="skills">
+      <div id='skills' className="skills">
          <div className="container">
             <h1>Skills</h1>
          <Swiper

@@ -30,6 +30,11 @@ footer{
         padding: 15px 40px ;
         border: 1px solid #FFFFFF;
         border-radius: 4px;
+        transition: .3s;
+    }
+    button:hover{
+        background-color: #FFFFFF;
+        color: black;
     }
 }
 footer * {
