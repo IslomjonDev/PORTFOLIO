@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-const BOT_TOKENtrim = '6741914349:AAGl2R75SFfTugVGZbtsnMfPgWEiMQlzQVU'
+const BOT_TOKEN = '6741914349:AAGl2R75SFfTugVGZbtsnMfPgWEiMQlzQVU'
 const chatId = '-4200519677'
 const userId = '5489414806'
 
