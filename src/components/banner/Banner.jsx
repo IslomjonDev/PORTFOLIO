@@ -2,6 +2,7 @@ import React from 'react'
 import './Banner.scss'
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -19,9 +20,9 @@ const Banner = () => {
                     />
                  <h1>FRONTEND DEVELOPER</h1>
                  <p>I am a programmer who perfects the frontend part of the program and pays attention to its design</p>
-                 <a href="/">
+                 <Link to='contact' spy={true} smooth={true} offset={-100} durati on={300}>
                     <button> Contact Me <HiOutlineArrowNarrowRight className='black' />  </button>
-                 </a>
+                 </Link>
                 </div>
              </div>
          </div>

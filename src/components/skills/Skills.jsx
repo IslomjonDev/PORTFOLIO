@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
@@ -18,9 +18,6 @@ const Skills = () => {
             <h1>Skills</h1>
          <Swiper
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
         autoplay={{
           delay: 1000, 
           disableOnInteraction: false,
@@ -35,11 +32,11 @@ const Skills = () => {
           768: {
             slidesPerView: 3,
           },
-          0: {
-            slidesPerView: 2,
+          500: {
+            slidesPerView: 1,
           }
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[ Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>

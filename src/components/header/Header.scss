@@ -3,11 +3,12 @@ header *{
     color: #FFFF;
 }
 header{
-    background-color:#121213 ;
-    padding: 30px 0;
+    background-color:transparent ;
+    padding: 35px 0;
     position: fixed;
     z-index: 5;
     width: 100%;
+    transition: .3s;
     h2{
         font-family: Roboto;
         font-weight: 300;
@@ -20,17 +21,30 @@ header{
             display: flex;
             gap: 40px;
         }
+        img{
+            width: 200px;
+            object-fit: cover;
+            height: 45px;
+        }
     }
     .burger{
         display: none;
         button{
-            background-color: #121213;
+            background-color: transparent;
             border: none;
             svg{
                 font-size:28px ;
             }
         }
     }
+}
+
+
+header.header.shrink{
+    padding: 25px 0 !important;
+    background-color: transparent;
+    box-shadow: 0 0px 10px #FFFFFF;
+    backdrop-filter: blur(10px);
 }
 
 @media (max-width:550px) {
