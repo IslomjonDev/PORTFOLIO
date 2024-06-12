@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.scss'
-import { ToastContainer } from 'react-toastify'
+import Loading from './components/loading/Loading.jsx'
+
+
+
+const App = lazy( () => import('./App.jsx'))
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ToastContainer>
-    </ToastContainer>
+    <Suspense fallback={<Loading/>}>
       <App />
+    </Suspense>
   </React.StrictMode>,
 )
