@@ -1,0 +1,74 @@
+.about {
+  background-color: #0E0E0F;
+  padding: 150px 0;
+}
+.about .about__me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .about__me .about-right h2 {
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.about .about__me .about-right p {
+  color: #FFFFFF;
+  max-width: 400px;
+  font-size: 20px;
+  font-family: Roboto;
+  line-height: 35px;
+}
+.about .about__me .about-right button {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 15px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-family: Roboto;
+  font-size: 18px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.about .about__me .about-right button svg {
+  font-size: 24px;
+}
+.about .about__me .about-right button:hover {
+  background-color: #FFFFFF;
+  color: #0E0E0F;
+}
+.about .about__me .about-left {
+  width: 50%;
+}
+.about .about__me .about-left img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 870px) {
+  .about__me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
+}

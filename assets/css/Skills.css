@@ -13,10 +13,11 @@
 
 .swiper {
   width: 100%;
-  height: 230px;
+  padding: 50px !important;
   margin-top: 50px;
-  -webkit-box-shadow: -10px 0 20px -10px #FFFFFF, 10px 0 20px -10px #FFFFFF;
-          box-shadow: -10px 0 20px -10px #FFFFFF, 10px 0 20px -10px #FFFFFF;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .swiper-slide {
@@ -82,4 +83,8 @@
 
 .swiper-slide:nth-child(10) svg {
   color: #C76494;
+}
+
+.swiper:hover {
+  cursor: pointer;
 }

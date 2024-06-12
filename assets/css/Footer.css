@@ -39,6 +39,12 @@ footer button {
   padding: 15px 40px;
   border: 1px solid #FFFFFF;
   border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer button:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 footer * {

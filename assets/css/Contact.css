@@ -76,7 +76,7 @@
   margin-bottom: 10px;
 }
 .contact form span input {
-  padding: 15px;
+  padding: 5px;
   width: 500px;
   background-color: transparent;
   outline: none;
@@ -114,8 +114,8 @@
           justify-content: center;
 }
 .contact form textarea {
-  padding: 15px;
   width: 1050px;
+  margin-top: 10px;
   background-color: transparent;
   outline: none;
   border: none;
