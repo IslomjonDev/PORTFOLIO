@@ -37,7 +37,7 @@ const Banner = () => {
                     <button> Contact Me <HiOutlineArrowNarrowRight className='black' />  </button>
                  </Link>
                 </motion.div>
-                <div className="banner-right">
+                {/* <div className="banner-right">
                       <motion.div className='box'
 
                       animate={{
@@ -53,7 +53,7 @@ const Banner = () => {
                       
                       >
                       </motion.div>
-                </div>
+                </div> */}
              </div>
          </div>
       </div>

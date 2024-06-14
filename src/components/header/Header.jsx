@@ -3,6 +3,8 @@ import './Header.scss'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from 'react-scroll';
 import logo from '../../assets/logos.png'
+import { IoIosArrowUp } from "react-icons/io";
+
 const Header = () => {
 
   let [burger , setBurger] = useState(false)
@@ -25,6 +27,30 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+
+
+  const ScrollToTop = () => {
+    const handleScrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  
+    return (
+      <button 
+      className='topbtn'
+        onClick={handleScrollToTop} 
+        style={buttonStyle}>
+        <IoIosArrowUp />
+      </button>
+    );
+  };
+
+  const buttonStyle = {
+   
+  };
+  
+  
 
   return (
 
@@ -66,6 +92,7 @@ const Header = () => {
             </div>
         </div>
     </header>
+    <ScrollToTop/>
     </>
   )
 }

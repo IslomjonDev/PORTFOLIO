@@ -29,7 +29,7 @@ const Footer = () => {
                         <h2>My Rezume</h2>
                         <IoIosArrowRoundDown />
                     </div>
-                    <a target='blank' href="https://www.canva.com/design/DAGGKWaHxG4/oWF0-mJYEdNJKXLC5Tr26Q/view?utm_content=DAGGKWaHxG4&utm_campaign=celebratory_first_publish&utm_medium=link&utm_source=editor_celebratory_first_publish">
+                    <a target='blank' href="https://www.canva.com/design/DAGGKWaHxG4/oWF0-mJYEdNJKXLC5Tr26Q/view?utm_content=DAGGKWaHxG4&utm_campaign=designshare&utm_medium=link&utm_source=editor">
                          <button>Click Me !</button>
                     </a> 
                 </div>
