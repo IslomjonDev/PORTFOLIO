@@ -8,9 +8,9 @@ import { IoIosArrowUp } from "react-icons/io";
 const Header = () => {
 
   let [burger , setBurger] = useState(false)
-
-
   const [shrink, setShrink] = useState(false);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,33 +24,48 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if(window.scrollY > 50 ){
+        window.removeEventListener('scroll', handleScroll);
+      }else{
+        <></>
+      }
     };
   }, []);
 
 
 
 
-  const ScrollToTop = () => {
-    const handleScrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  
-    return (
-      <button 
-      className='topbtn'
-        onClick={handleScrollToTop} 
-        style={buttonStyle}>
-        <IoIosArrowUp />
-      </button>
-    );
+
+
+const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsVisible(scrollTop > 800);
   };
 
-  const buttonStyle = {
-   
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
-  
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    isVisible && (
+      <button 
+      className={`topbtn ${isVisible ? 'visible' : 'hidden'}`}
+        onClick={handleScrollToTop} 
+      >
+        <IoIosArrowUp />
+      </button>
+    )
+  );
+};
+
 
   return (
 

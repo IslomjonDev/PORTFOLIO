@@ -20,6 +20,12 @@ header{
         ul{
             display: flex;
             gap: 40px;
+            a{
+                transition: .3s;
+            }
+            a:hover{
+                color: #bdb8b8;
+            }
         }
         .logow{
             max-width: 120px;
@@ -51,6 +57,9 @@ header.header.shrink{
     background-color: transparent;
     box-shadow: 0 0px 10px #FFFFFF;
     backdrop-filter: blur(10px);
+    .nav__list.show{
+        backdrop-filter: blur(10px) !important;
+    }
 }
 
 @media (max-width:550px) {
@@ -62,12 +71,12 @@ header.header.shrink{
         width: 300px;
         height: 100vh;
         border-radius: 0 12px 12px 0;
-        background-color: black;
         position: absolute;
         scale: 1;
         padding: 40px 30px;
-        top: 66px;
+        top: 76px;
         flex-direction: column;
+        backdrop-filter: blur(5px);
         left: 0;
         ul{
             display: flex;
@@ -78,27 +87,31 @@ header.header.shrink{
         width: 250px;
         height: 100vh;
         border-radius: 0 12px 12px 0;
-        background-color: black;
+        backdrop-filter: blur(5px);
+        background-color: #373A3F;
         position: absolute;
         scale: 1;
         padding: 40px 30px;
-        top: 66px;
+        top: 95px;
         flex-direction: column;
         left: 0;
     }
     .nav__list{
         scale: 0;
         position: absolute;
+        backdrop-filter: blur(5px);
     }
 }
 a{
     cursor: pointer;
 }
 
+
+
 .topbtn{
     position: fixed ;
-    bottom: 40px;
-    right: 40px;
+    bottom: 80px;
+    right: 80px;
     background-color: #FFFFFF;
     color: black;
     border: none;
@@ -109,8 +122,8 @@ a{
     justify-content :center;
     align-items: center;
     cursor: pointer;
-    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: .3s;
+    box-shadow:0 2px 6px #FFFFFF;
+    z-index: 5;
     svg{
         font-size: 24px;
     }
