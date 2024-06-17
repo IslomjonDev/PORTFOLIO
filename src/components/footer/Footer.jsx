@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
         </div>
      </footer>
-     <p className='p'>The End</p>
+     <p className='p'>Thank for your attention</p>
     </>
   )
 }

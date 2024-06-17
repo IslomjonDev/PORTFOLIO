@@ -58,7 +58,7 @@ const Header = () => {
     <header className={`header ${shrink ? 'shrink' : ''}`}>
         <div className="container">
             <div className="navbar">
-                <div>
+                <div className='logow'>
                   <Link to='banner' href='/' spy={true} smooth={true} offset={-100} durati on={100}> 
                        <img src={logo} alt="" />
                   </Link>

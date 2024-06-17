@@ -21,10 +21,16 @@ header{
             display: flex;
             gap: 40px;
         }
-        img{
-            width: 200px;
-            object-fit: cover;
+        .logow{
+            max-width: 120px;
             height: 45px;
+            align-items: center;
+            display: flex;
+            margin-left: -40px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
     .burger{
