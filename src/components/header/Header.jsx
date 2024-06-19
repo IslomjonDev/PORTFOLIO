@@ -74,7 +74,7 @@ const ScrollToTop = () => {
         <div className="container">
             <div className="navbar">
                 <div className='logow'>
-                  <Link to='banner' href='/' spy={true} smooth={true} offset={-100} durati on={100}> 
+                  <Link to='banner' href='/' spy={true} smooth={true} offset={-100} duration={100}> 
                        <img src={logo} alt="" />
                   </Link>
                 </div>
@@ -82,20 +82,20 @@ const ScrollToTop = () => {
                     <ul>
                     <li>
                       <Link
-                       onClick={()=> setBurger(false)} to='banner' spy={true} smooth={true} offset={-100} duration={300} >HOME
+                       onClick={()=> setBurger(false)} to='banner' spy={true} smooth={true} offset={-100} duration={250} >HOME
                        </Link>
                     </li>
                     <li>
-                      <Link onClick={()=> setBurger(false)} to='about' spy={true} smooth={true} offset={-100} durati on={300} >ABOUT</Link>
+                      <Link onClick={()=> setBurger(false)} to='about' spy={true} smooth={true} offset={-100} duration={250} >ABOUT</Link>
                     </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='skills' spy={true} smooth={true} offset={-100} durati on={300} >SKILLS</Link>
+                        <Link onClick={()=> setBurger(false)} to='skills' spy={true} smooth={true} offset={-100} duration={250} >SKILLS</Link>
                       </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='projects' spy={true} smooth={true} offset={-100} durati on={300} >PROJECTS</Link>
+                        <Link onClick={()=> setBurger(false)} to='projects' spy={true} smooth={true} offset={-100} duration={250} >PROJECTS</Link>
                       </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='contact' spy={true} smooth={true} offset={-100} durati on={300} >CONTACT</Link>
+                        <Link onClick={()=> setBurger(false)} to='contact' spy={true} smooth={true} offset={-100} duration={250} >CONTACT</Link>
                       </li>
                     </ul>
                 </div>

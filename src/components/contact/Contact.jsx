@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.scss'
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaTelegramPlane , FaFacebookF , FaLinkedinIn } from "react-icons/fa";
+import { FaTelegramPlane , FaPhoneAlt, FaFacebookF , FaLinkedinIn } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -54,31 +54,16 @@ const Contact = () => {
       <div id='contact' className="contact">
          <div className="container">           
             <form onSubmit={handleSubmit} action="">
-                <h2>Contact</h2>
-                <div className="df">
-                    <span>
-                        <label htmlFor="">Name</label>
-                        <input value={name} onChange={(e) => setName(e.target.value)}  type="text" required  placeholder='John'/>
-                    </span>
-                    <span>
-                        <label htmlFor="">LastName</label>
-                        <input value={lastName} onChange={(e) => setLastName(e.target.value)} type="text" placeholder='Doe' required/>
-                    </span>
-                </div>
-                <span>
-                    <label htmlFor="">for reference</label>
-                    <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder='ask me quation ?'  name="" id=""></textarea>
-                </span>
-                <button>SHOOT <GoArrowRight /></button>
-            </form>
-            <h2>CONNECT WITH ME</h2>
-            <div className="contact-me">
+                <h2>Contact<span>Me</span></h2>
+                <div className="contact__content">
+                    <div className="contact-me">
                 <a target='blank' href="https://www.instagram.com/_islomjon_088_/">
                   <div className="contact__card">
                         <IoLogoInstagram />
                         <p>Instagramm</p>
                     </div>
                 </a>
+             
                 <a target='blank' href="https://t.me/Mamad1yev_1">
                     <div className="contact__card">
                         <FaTelegramPlane />
@@ -97,7 +82,39 @@ const Contact = () => {
                         <p>Linkedin</p>
                     </div>
                 </a>
-            </div>
+                <a target='blank' href="tel:9989911947484">
+                  <div className="contact__card">
+                        <FaPhoneAlt />
+                        <h4>+998-91-194-74-84</h4>
+                    </div>
+                </a>
+                      </div>
+                    <div className="df">
+                    <div className="dfinp">
+                            <div className='fdinputs'>
+                                    <span>
+                                        <input value={name} onChange={(e) => setName(e.target.value)}  type="text" required  placeholder='FirstName'/>
+                                    </span>
+                                    <span>
+                                        <input value={lastName} onChange={(e) => setLastName(e.target.value)} type="text" placeholder='LastName' required/>
+                                    </span>
+                            </div>
+                            <div className='fdinputs'>
+                                    <span>
+                                        <input value={lastName} onChange={(e) => setLastName(e.target.value)} type="email" placeholder='Email' required/>
+                                    </span>
+                                    <span>
+                                        <input value={lastName} onChange={(e) => setLastName(e.target.value)} type="text" placeholder='Subject' required/>
+                                    </span>
+                            </div>
+                    </div>
+                    <span>
+                        <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder='ask me quation ?'  name="" id=""></textarea>
+                        <button>Send Message <GoArrowRight /></button>
+                    </span>
+                    </div>
+                </div>
+            </form>
          </div>
       </div>
     </>

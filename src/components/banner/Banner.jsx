@@ -10,7 +10,7 @@ const Banner = () => {
       <div id='banner' className="banner">
          <div className="container">
              <div className="banner-content">
-                <div data-aos="fade-right"
+                <div className='orderl' data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <div  className="banner-left">
@@ -27,7 +27,11 @@ const Banner = () => {
                           <button> Contact Me <HiOutlineArrowNarrowRight className='black' />  </button>
                       </Link>
                     </div>
+                </div>
+                <div className='orderr' data-aos="zoom-out-left">
+                  <div className="banner__right">
                   </div>
+                </div>
              </div>
          </div>
       </div>

@@ -1,33 +1,39 @@
 .contact{
     padding: 50px 0;
-    background-color: adjust-color( #000000);
+    background-color: #0a0a0a;
         h2{
             color: #FFFFFF;
             text-align: center;
             margin-bottom: 50px;
             margin-top: 100px;
+            font-family: Roboto;
+            font-size: 28px;
+            display: flex;
+            gap: 10px;
+            span{
+                color: #04FCF0;
+            }
         }
         .contact-me{
             display: flex;
-            // justify-content: space-between;
-            margin-bottom: 50px;
-            gap: 100px;
+            flex-direction: column;
+            gap: 30px;
         }
     .contact__card{
         display: flex;
         cursor: pointer;
         align-items: center;
         gap: 10px;
-        border: 1px solid #FFFFFF;
-        max-width: 260px;
-        padding: 30px;
+        border: 1px solid #04FCF0;
+        max-width: 240px;
+        padding: 25px;
         border-radius: 6px;
         p{
-            font-size: 32px;
+            font-size: 24px;
             color: #FFFFFF;
         }
         svg{
-            font-size: 32px;
+            font-size: 30px;
             color: #C930C8 !important;
         }
     }
@@ -46,6 +52,12 @@
             color: #007AB5 !important ;
         }
     }
+    .contact-me a:nth-child(5){
+        color: #FFFFFF;
+        svg{
+            color: #FFFFFF !important ;
+        }
+    }
 
     form{
         margin-top: 50px;
@@ -53,22 +65,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        span{
+        .contact__content{
+            display: flex;
+            gap: 50px;
+        }
+        .dfinp{
+            display: flex;
+            gap: 20px;
+        }
+        .fdinputs{
             display: flex;
             flex-direction: column;
-            label{
-                color: #FFFFFF;
-                margin-bottom: 10px;
-            }
+            gap: 35px;
+        }
+        span{
             input{
-                padding: 5px;
-                width: 500px;
-                background-color: transparent;
+                padding: 15px;
+                border-radius: 10px;
+                width: 240px;
+                background-color: #0a0a0a;
                 outline: none;
                 border: none;
-                border-bottom: 1px solid #FFFFFF;
+                border: 1px solid #3c3c3c;
                 color: #FFFFFF;
             }
+          
             input::placeholder{
                 color: #FFFFFF;
                 opacity: .6;
@@ -76,44 +97,49 @@
         }
         .df{
             display: flex;
+            flex-direction: column;
             gap: 50px;
             justify-content: center;
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 6px;
+            border: 1px solid #04FCF0;
         }
         textarea{
-            width: 1050px ;
-            margin-top: 10px;
+            width: 500px ;
+            padding: 20px;
+            border-radius: 10px;
+            height: 220px;
             background-color: transparent;
             outline: none;
             border: none;
-            border-bottom: 1px solid #FFFFFF;
+            border: 1px solid #3c3c3c;
             color: #FFFFFF;
             resize: none;
-        }
-        label{
-            margin-top: 50px;
         }
         textarea::placeholder{
             color:#FFFFFF;
             opacity: .6;
         }
         button{
-            margin-top: 50px;
-            width: 1050px;
+            margin-top: 0px;
+            width: 180px !important;
             background-color: #000000;
             color: #FFFFFF;
-            border: 1px solid #FFFFFF;
-            padding: 15px;
+            border: 1px solid #3c3c3c;
+            padding: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            border-radius: 4px;
+            border-radius: 10px;
+            margin-top: 10px;
             svg{
                 font-size: 24px;
             }
         }
         button:hover{
-            background-color: #FFFFFF;
+            background-color: #04FCF0;
             color: #000000;
             transition: .3s;
         }
@@ -151,6 +177,9 @@
     }
 }
 @media (max-width:550px) {
+    .contact__content{
+        flex-direction: column;
+    }
     form{
         button{
             width: 300px !important;
@@ -164,6 +193,9 @@
         }
         textarea{
             width: 300px !important;
+        }
+        .dfinp{
+            flex-direction: column;
         }
     }
 }

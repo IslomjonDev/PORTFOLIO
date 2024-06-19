@@ -20,11 +20,14 @@ header{
         ul{
             display: flex;
             gap: 40px;
-            a{
+            a:hover {
                 transition: .3s;
+                color: #04FCF0;
             }
-            a:hover{
-                color: #bdb8b8;
+            a.active{
+                border-bottom: 3px solid #04FCF0;
+                color: #04FCF0;
+                padding-bottom: 7px;
             }
         }
         .logow{
@@ -101,6 +104,11 @@ header.header.shrink{
         position: absolute;
         backdrop-filter: blur(5px);
     }
+    .topbtn{
+        bottom: 20px !important;
+        right: 25px !important;
+        color: rgb(255, 255, 255);
+    }
 }
 a{
     cursor: pointer;
@@ -110,8 +118,8 @@ a{
 
 .topbtn{
     position: fixed ;
-    bottom: 80px;
-    right: 80px;
+    bottom: 40px;
+    right: 40px;
     background-color: #FFFFFF;
     color: black;
     border: none;
