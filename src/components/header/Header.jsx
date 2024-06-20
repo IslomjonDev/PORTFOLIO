@@ -37,7 +37,6 @@ const Header = () => {
 
 
 
-const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -54,27 +53,23 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  return (
-    isVisible && (
-      <button 
-      className={`topbtn ${isVisible ? 'visible' : 'hidden'}`}
-        onClick={handleScrollToTop} 
-      >
-        <IoIosArrowUp />
-      </button>
-    )
-  );
-};
+
 
 
   return (
-
-    <>
+ 
+    <> 
+        <button 
+          className={`topbtn ${isVisible ? 'visible' : 'hidden'}`}
+          onClick={handleScrollToTop} 
+        >
+          <IoIosArrowUp />
+        </button>      
     <header className={`header ${shrink ? 'shrink' : ''}`}>
         <div className="container">
             <div className="navbar">
                 <div className='logow'>
-                  <Link to='banner' href='/' spy={true} smooth={true} offset={-100} duration={100}> 
+                  <Link to='banner' href='/' spy={true} smooth={true} offset={-100} duration={300}> 
                        <img src={logo} alt="" />
                   </Link>
                 </div>
@@ -82,20 +77,20 @@ const ScrollToTop = () => {
                     <ul>
                     <li>
                       <Link
-                       onClick={()=> setBurger(false)} to='banner' spy={true} smooth={true} offset={-100} duration={250} >HOME
+                       onClick={()=> setBurger(false)} to='banner' spy={true} smooth={true} offset={-100} duration={300} >HOME
                        </Link>
                     </li>
                     <li>
-                      <Link onClick={()=> setBurger(false)} to='about' spy={true} smooth={true} offset={-100} duration={250} >ABOUT</Link>
+                      <Link onClick={()=> setBurger(false)} to='about' spy={true} smooth={true} offset={-100} duration={300} >ABOUT</Link>
                     </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='skills' spy={true} smooth={true} offset={-100} duration={250} >SKILLS</Link>
+                        <Link onClick={()=> setBurger(false)} to='skills' spy={true} smooth={true} offset={-100} duration={300} >SKILLS</Link>
                       </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='projects' spy={true} smooth={true} offset={-100} duration={250} >PROJECTS</Link>
+                        <Link onClick={()=> setBurger(false)} to='projects' spy={true} smooth={true} offset={-100} duration={300} >PROJECTS</Link>
                       </li>
                       <li>
-                        <Link onClick={()=> setBurger(false)} to='contact' spy={true} smooth={true} offset={-100} duration={250} >CONTACT</Link>
+                        <Link onClick={()=> setBurger(false)} to='contact' spy={true} smooth={true} offset={-100} duration={300} >CONTACT</Link>
                       </li>
                     </ul>
                 </div>
@@ -107,7 +102,6 @@ const ScrollToTop = () => {
             </div>
         </div>
     </header>
-    <ScrollToTop/>
     </>
   )
 }

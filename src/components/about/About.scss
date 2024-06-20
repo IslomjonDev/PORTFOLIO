@@ -1,74 +1,115 @@
 .about{
     background-color: #060606;
     padding: 150px 0;
-    .about__title {
-        h2{
-            color: #FFFFFF;
-            text-align: center;
-            font-family: Roboto;
-            font-size: 28px;
-            span{
-                color: #04FCF0;
-            }
-        }
+    .items *{
+        color: #FFFFFF;
     }
-    .about__me{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .about-right{ 
-            h2{
-                color: #FFFFFF;
-                font-family: Roboto;
-                font-size: 26px;
-                margin-bottom: 30px;
-                span{
-                    color: #04FCF0;
-                }
-            }
-            p{
-                color: #FFFFFF;
-                max-width: 400px;
-                font-size: 20px;
-                font-family: Roboto;
-                line-height: 35px;
-            }
-            button{
-                margin-top: 20px;
-                background-color: transparent;
-                color: #FFFFFF;
-                border: 1px solid #FFFFFF;
-                padding: 15px 40px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-family: Roboto;
-                font-size: 18px;
-                border-radius: 4px;
-                transition: .3s;
-                svg{
-                    font-size: 24px;
-                }
-            }
-            button:hover{
-                background-color: #FFFFFF;
-                color: #0E0E0F;
-            }
-        }
-        .about-left{
-            width: 50%;
-            img{
-                width: 100%;
-                border-radius: 8px;
-            }
+    .about__title{
+        color: #FFFFFF;
+        margin-bottom: 150px ;
+        text-align: center;
+        span{
+            color: #04FCF0;
         }
     }
 }
+.items{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #04FCF0;
+    left: calc(50% - 1px);
+}
+.item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.item:last-child{
+    margin-bottom: 0;
+}
+.item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.item__dot{
+    height: 21px;
+    width: 21px;
+    background-color: #04FCF0;
+    box-shadow: 0  0 25px #04FCF0,
+    0  0 25px #04FCF0;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.item__date{
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin: 6px 0 15px;
+}
+.items__content{
+    background-color: transparent;
+    border: 3px solid #04FCF0;
+    padding: 30px 50px;
+    height: 140px;
+    border-radius: 36px;
+    box-shadow:  0 0 10px #04FCF0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.items__content:hover{
+    transform: scale(1.04);
+    box-shadow:  0 0 25px #04FCF0;
+}
+.items__content h2{
+    font-size: 20px;
+    font-family: Roboto;
+    margin: 0 0 10px ;
+}
+.items__content p {
+    line-height: 22px;
+    font-family: Roboto;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px; 
+}
 
-@media (max-width:870px) {
-    .about__me{
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
+@media (max-width:500px) {
+    .about{
+        .items__content{
+            height: auto;
+            padding: 20px 30px;
+        }
+        .items::before{
+            left:7px;
+        }
+        .item:nth-child(odd){
+            padding-right: 0;
+            text-align: left;
+        }
+        .item:nth-child(even) , 
+        .item:nth-child(odd) {
+            padding-left: 37px;
+        }
+        .item__dot{
+            left: 0;
+        }
+
     }
 }

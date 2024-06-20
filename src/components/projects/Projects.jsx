@@ -8,7 +8,7 @@ import card2 from '../../assets/project2.png'
 import card3 from '../../assets/project3.png'
 import card4 from '../../assets/project4.png'
 import { FaEarthAmericas } from "react-icons/fa6";
-import { FaGithub , FaArrowLeft } from "react-icons/fa";
+import { FaGithub  } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -17,90 +17,108 @@ const Projects = () => {
          <div className="container">
             <h1>Projects</h1>
             <div className="cards">      
-                <div data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">
-                  <div className="card">
+                <div className="cards__df">             
+                <div data-aos="fade-right">
+                    <div className="card">
+                        <div className="card-left">
+                              <img src={card1} alt="" />
+                            <div className="card__content">
+                                <div className='codes'>
+                                    <a target='blank'  href="https://html-css-exam-2-eak6.vercel.app/">
+                                      <FaEarthAmericas />
+                                      Open a brauzer
+                                    </a>
+                                    <a  target='blank' href="https://github.com/IslomjonDev/HTML-CSS-EXAM-2">
+                                      <FaGithub />
+                                      wiew github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-right">
+                          <h2>Turkish restaurant</h2>
+                          <p>this site is about fake restaurant, it has many pages and it is written in html and js</p>
+                          <h3>Tech stack : <span>HTML</span> <span>SCSS</span> <span>JS</span> <span>AOS</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                      <div className="card">
                       <div className="card-left">
-                            <img src={card1} alt="" />
+                            <img src={card2} alt="" />
                           <div className="card__content">
-                            <a target='blank'  href="https://html-css-exam-2-eak6.vercel.app/">
-                            <FaEarthAmericas />
-                            </a>
-                            <a  target='blank' href="https://github.com/IslomjonDev/HTML-CSS-EXAM-2">
-                            <FaGithub />
-                            </a>
+                              <div className='codes'>
+                                  <a target='blank'  href="https://exam-extra.vercel.app/">
+                                    <FaEarthAmericas />
+                                    Open a brauzer
+                                  </a>
+                                  <a  target='blank' href="https://github.com/IslomjonDev/EXAM-EXTRA">
+                                    <FaGithub />
+                                    wiew github
+                                  </a>
+                              </div>
                           </div>
                       </div>
                       <div className="card-right">
-                          <h2>Turkish restaurant</h2>
-                          <p>this site is about fake restaurant, it has many pages and it is written in html and js</p>
-                          <button> <FaArrowLeft/>hover here</button>
+                        <h2>Harley Quinn Portfolio</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, atque.</p>
+                        <h3>Tech stack : <span>HTML</span> <span>CSS</span> <span>JS</span><span>AOS</span></h3>
                       </div>
-                  </div>
+                  </div>  
                 </div>
-                  <div data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom">
+                </div>
+                <div className="cards__df">       
+                <div data-aos="flip-left">
+                    <div className="card">
+                        <div className="card-left">
+                              <img src={card3} alt="" />
+                            <div className="card__content">
+                                <div className='codes'>
+                                    <a target='blank'  href="https://react2-lesson4.vercel.app/">
+                                      <FaEarthAmericas />
+                                      Open a brauzer
+                                    </a>
+                                    <a  target='blank' href="https://github.com/IslomjonDev/HTML-CSS-EXAM-2">
+                                      <FaGithub />
+                                      wiew github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-right">
+                          <h2>Online market</h2>
+                          <p>this site is about the online market, it is written in react and has card wishlist pages</p>
+                          <h3>Tech stack : <span>HTML</span> <span>SCSS</span> <span>JS</span> <span>AOS</span><span>REACT</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-right">                      
                       <div className="card">
-                          <div className="card-left">
-                                <img src={card2} alt="" />
-                              <div className="card__content">
-                                <a target='blank'  href="https://exam-extra.vercel.app/">
-                                <FaEarthAmericas />
-                                </a>
-                                <a  target='blank' href="https://github.com/IslomjonDev/EXAM-EXTRA">
-                                <FaGithub />
-                                </a>
+                      <div className="card-left">
+                            <img src={card4} alt="" />
+                          <div className="card__content">
+                              <div className='codes'>
+                                  <a target='blank'  href="https://figma-exam.vercel.app/">
+                                    <FaEarthAmericas />
+                                    Open a brauzer
+                                  </a>
+                                  <a  target='blank' href="https://github.com/IslomjonDev/FIGMA-EXAM">
+                                    <FaGithub />
+                                    wiew github
+                                  </a>
                               </div>
                           </div>
-                          <div className="card-right">
-                              <h2>Harley Quinn Portfoilo</h2>
-                              <p>This site is a harley quinn portfolio written on youtube and written in html and js</p>
-                              <button> <FaArrowLeft/>hover here</button>
-                          </div>
                       </div>
-                  </div>
-                  <div data-aos="fade-up"
-                           data-aos-anchor-placement="top-bottom">
-                      <div className="card">
-                          <div className="card-left">
-                                <img src={card3} alt="" />
-                              <div className="card__content">
-                                <a target='blank'  href="https://react2-lesson4.vercel.app/">
-                                <FaEarthAmericas />
-                                </a>
-                                <a  target='blank' href="https://github.com/IslomjonDev/react2-lesson4">
-                                <FaGithub />
-                                </a>
-                              </div>
-                          </div>
-                          <div className="card-right">
-                              <h2>online market</h2>
-                              <p>this site is about the online market, it is written in react and has card wishlist pages</p>
-                              <button> <FaArrowLeft/>hover here</button>
-                          </div>
+                      <div className="card-right">
+                        <h2>Superb Home</h2>
+                        <p>This site is a figma for house searching and buying</p>
+                        <h3>Tech stack : <span>HTML</span> <span>CSS</span> <span>JS</span></h3>
                       </div>
-                  </div>
-                  <div data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom">
-                      <div className="card">
-                          <div className="card-left">
-                                <img src={card4} alt="" />
-                              <div className="card__content">
-                                <a target='blank'  href="https://figma-exam.vercel.app/">
-                                <FaEarthAmericas />
-                                </a>
-                                <a  target='blank' href="https://github.com/IslomjonDev/FIGMA-EXAM">
-                                <FaGithub />
-                                </a>
-                              </div>
-                          </div>
-                          <div className="card-right">
-                              <h2>Superb Home</h2>
-                              <p>This site is a figma for house searching</p>
-                              <button> <FaArrowLeft/>hover here</button>
-                          </div>
-                      </div>
-                  </div>
+                  </div>  
+                </div>
+
+
+                </div>
             </div>
          </div>
       </div>
@@ -109,3 +127,14 @@ const Projects = () => {
 }
 
 export default Projects
+
+
+
+
+
+
+
+
+
+
+

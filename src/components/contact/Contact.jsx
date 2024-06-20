@@ -82,7 +82,7 @@ const Contact = () => {
                         <p>Linkedin</p>
                     </div>
                 </a>
-                <a target='blank' href="tel:9989911947484">
+                <a target='blank' href="tel:998911947484">
                   <div className="contact__card">
                         <FaPhoneAlt />
                         <h4>+998-91-194-74-84</h4>

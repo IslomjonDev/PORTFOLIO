@@ -1,29 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import about from '../../assets/about2.jpg'
 import { CgDetailsMore } from "react-icons/cg";
-
 import './About.scss'
+
+let item = [
+  {
+    layoutId : "1" ,
+    subtitle : 'lorem10sadiak',
+    title : 'asdikamksd'
+  }
+]
+
 const About = () => {
   return (
     <>
       <div id='about' className="about">
          <div className="container">
           <div className="about__title">
-              <h2>About <span>Me</span></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maiores repellendus velit, porro dignissimos autem sint accusamus cumque optio, quas fugit? Possimus tempore voluptatibus hic maiores, ut quaerat adipisci inventore vitae sapiente iusto vel eaque nulla, maxime aut, provident obcaecati cum eius ipsum soluta autem harum? Doloremque pariatur, earum consequuntur quae maxime suscipit voluptatum rerum iusto, velit consectetur, fugit voluptatibus. Praesentium dicta error culpa molestias voluptate asperiores suscipit, nulla at reprehenderit veritatis exercitationem? Necessitatibus quaerat molestias obcaecati voluptates, natus vel corporis consequatur in eaque quasi, ullam aliquam eos commodi, eum iusto. Sit harum amet et nesciunt, distinctio aspernatur quos enim!</p>
+              <h2><span>Education</span></h2>
           </div>
-            <div className="about__me">
-                <div className="about-left">
-                    <img src={about} alt="" />
-                </div>
-                <div className="about-right">
-                    <h2>Hi I'm <span>Mamadiyev Islomjon !</span> </h2>
-                    <p>I am a frontend developer, my main task is to write the part of the browser visible to the user in the code, to ensure the fast operation and beautiful appearance of the site.</p>
-                    <a target='blank' href="https://www.canva.com/design/DAGGKWaHxG4/oWF0-mJYEdNJKXLC5Tr26Q/view?utm_content=DAGGKWaHxG4&utm_campaign=celebratory_first_publish&utm_medium=link&utm_source=editor_celebratory_first_publish"> 
-                        <button>More <CgDetailsMore />  </button>
-                    </a>
-                </div>
-            </div>
+          <div className="education">
+             <div className="items">
+                   <div className="item">
+                       <div className="item__dot"> </div>
+                           <div className="item__date">2023</div>
+                           <div className="items__content">
+                              <h2> HIGH SCHOOL</h2>
+                              <p> In May 2023, I graduated from high school and entered a vocational college !</p>
+                           </div>
+                   </div>
+                   <div className="item">
+                       <div className="item__dot"></div>
+                           <div className="item__date">2023</div>
+                           <div className="items__content">
+                              <h2>NAJOT TALIM</h2>
+                              <p> In 2023, I entered the Najot Talim educational center in the field of IT and completed the frontend course for 1 year !</p>
+                           </div>
+                   </div>
+                   <div className="item">
+                       <div className="item__dot"></div>
+                           <div className="item__date">2024</div>
+                          <div className="items__content">
+                              <h2>COLLEGE</h2>
+                              <p>In 2024, I finished the first course of the vocational college in the field of IT </p>
+                           </div>
+                   </div>
+                   <div className="item">
+                       <div className="item__dot"></div>
+                           <div className="item__date">2024</div>
+                           <div className="items__content">
+                              <h2>MY FIRST JOB</h2>
+                              <p>Coming Soon !</p>
+                           </div>
+                       
+                   </div>
+              </div>
+           </div>
          </div>
       </div>
     </>
